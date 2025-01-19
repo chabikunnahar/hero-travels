@@ -14,10 +14,9 @@ h3{
     font-weight:800;
     text-align: center;
     line-height: normal;
+
 }
-.span{
-    color:rgba(255, 84, 0, 1) ;
-}
+
 
 p, li{
     font-size:18px ;
@@ -41,6 +40,7 @@ body{
     background-color:rgba(255, 84, 0, 1) ;
     border: 1px solid rgba(255, 84, 0, 1) ; 
     color:white ;
+    font-weight: bold;
 }
 /* navbar style */
 .nav-bar{
@@ -67,6 +67,9 @@ body{
 }
 .nav-options p{
 cursor: pointer;
+}
+.span{
+    color:rgba(255, 84, 0, 1) ;
 }
 /* nav section end */
 
@@ -115,4 +118,71 @@ input, select{
     cursor: pointer;
     font-size: 16px;
 }
+/* popular sectn start */
+.popular-section{
+    display:flex;
+    justify-content:space-between;
+    gap:3rem ;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+   row-gap: 1rem;
+   justify-content: space-between;
+}
+.text-content p,
+ .text-content li,
+ .text-content h3{
+    text-align: left;
+}
+.text-content p,
+ .text-content li{
+    font-size: 16px;
+    line-height:24px;
+    word-spacing:1px;
+    letter-spacing:1px;
+ }
+/*choose your destination*/
+.your-destination img{
+    width: 100%;
+    height: 300px;
+    filter:brightness(70%);
 
+
+}
+.row-1,
+.row-2,
+.row-3{
+display: grid;
+grid-template-columns: 1fr 1fr ;
+margin: 1rem 0;
+gap: 1rem;
+}
+.country-card{
+position: relative;
+}
+.country-name{
+position: absolute;
+top:50% ;
+left:50%;
+color:#FFFFFF;
+font-size: 1.5rem;
+font-weight: bold;
+transform: translate(-50% , -50%);
+}
+.row-2{
+    display: grid;
+    grid-template-columns:0.8fr  1.50fr 0.7fr ;
+    
+}
+.row-3{
+    grid-template-columns: .75fr 1.25fr;
+}
+.your-destination h3,
+.your-destination p {
+    width: 645px;
+    margin:30px auto ;
+}
+/* .your-destination p{
+    color: rgba(19, 19, 24, 0.7);
+} */
